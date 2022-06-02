@@ -36,7 +36,7 @@ public class ChooseMovie extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_movie);
 
-        String url ="https://github.com/palak1607/Movie_Recommender_Palak_Mahajan/blob/main/workbookListData.xlsx?raw=true";
+        String url ="https://github.com/palak1607/Movie_Recommender_Palak_Mahajan/blob/main/movie2.xls?raw=true";
 
         recyclerView = findViewById(R.id.ListOfData) ;
 
@@ -54,7 +54,7 @@ public class ChooseMovie extends AppCompatActivity {
 
             @Override
             public void onSuccess(int statusCode, Header[] headers, File file) {
-                Toast.makeText(ChooseMovie.this, "File downloaded successfully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ChooseMovie.this, "downloaded successfully", Toast.LENGTH_SHORT).show();
 
                 WorkbookSettings ws = new WorkbookSettings();
                 ws.setGCDisabled(true);

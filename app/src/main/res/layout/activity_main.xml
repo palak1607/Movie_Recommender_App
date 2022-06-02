@@ -12,7 +12,7 @@
         android:layout_width="286dp"
         android:layout_height="130dp"
         android:layout_marginBottom="88dp"
-        android:text="Where yOur curiosity cEases, Ours Eases  !!"
+        android:text="Let your story hunter fly higher with us...!!!"
         android:textColor="#FFC107"
         android:textSize="24sp"
         android:textStyle="bold|italic"
@@ -32,24 +32,25 @@
         android:textSize="45sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="143dp"
-        android:layout_height="77dp"
+        android:layout_width="180dp"
+        android:layout_height="63dp"
         android:onClick="Continue"
-        android:text="Continue"
+        android:text="Get Movies"
         android:textColorHighlight="#EEEAEF"
         android:textSize="18sp"
+        app:backgroundTint="#009688"
         app:barrierMargin="8dp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintVertical_bias="0.653" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
