@@ -36,6 +36,7 @@ public class ChooseMovie extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_movie);
 
+        // Excel url,  from which data will be read
         String url ="https://github.com/palak1607/Movie_Recommender_Palak_Mahajan/blob/main/movie2.xls?raw=true";
 
         recyclerView = findViewById(R.id.ListOfData) ;

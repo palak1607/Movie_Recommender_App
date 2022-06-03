@@ -14,10 +14,10 @@ import com.example.movie_recommender_app.Datum;
 import com.example.movie_recommender_app.R;
 
 public class RecyclerViewAdapter2 extends RecyclerView.Adapter<RecyclerViewAdapter2.viewHolder>{
-    Datum[] sourceData;
+    Datum[] data;
 
-    public RecyclerViewAdapter2(Datum[] sourceData, Context context) {
-        this.sourceData = sourceData;
+    public RecyclerViewAdapter2(Datum[] data, Context context) {
+        this.data = data;
         this.context = context;
     }
 
@@ -35,18 +35,16 @@ public class RecyclerViewAdapter2 extends RecyclerView.Adapter<RecyclerViewAdapt
 
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
-        Datum datum = sourceData[position];
-        holder.title.setText(datum.getTitles(position));
-        holder.desc.setText(datum.getDesc(position) );
-       // String title = title.get(position);
-       // Toast.makeText(context, "successful", Toast.LENGTH_SHORT).show();
+        Datum datum = data[position];
+        holder.title.setText(datum.getTitles());
+        holder.desc.setText(datum.getDesc() );
 
 
     }
 
     @Override
     public int getItemCount() {
-        return sourceData.length ;
+        return data.length ;
     }
 
     public class viewHolder extends RecyclerView.ViewHolder{

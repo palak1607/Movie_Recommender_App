@@ -27,8 +27,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     LayoutInflater inflater;
     List<String> titles, descriptions, imageUrl;
-    //public static final String  extraMSG1 = "com.example.movie_recommender_app.selected.titles";
-   // public static final String  extraMSG2 = "com.example.movie_recommender_app.selected.descriptions";
 
 
     public RecyclerViewAdapter(Context context, List<String> titles, List<String> descriptions, List<String>imageUrl){
@@ -43,10 +41,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
-
-
-        //View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row, parent ,false);
 
 
         View view = inflater.inflate(R.layout.row, parent, false);
@@ -89,7 +83,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
             int pos= this.getBindingAdapterPosition() ;
 
-            Toast.makeText(context, "The position is "+ pos, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(context, "The position is "+ pos, Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(context, DisplayRecommend.class);
             TextView titleDisplay = (TextView) title;                                       //
             TextView descDisplay = (TextView) content;

@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Continue(View view){
-        //handle the continue button
+        //handle the 'GET MOVIES' button
         //Building an intent to open another activity
         Intent intent = new Intent(this, ChooseMovie.class);
         startActivity(intent);

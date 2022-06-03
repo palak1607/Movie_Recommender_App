@@ -13,36 +13,34 @@ public class Datum {
 
     @SerializedName("Desc")
     @Expose
-    private List desc;
-    @SerializedName("ReleaseDate")
-    @Expose
-    private List  releaseDate;
+    private String desc;
+
     @SerializedName("titles")
     @Expose
-    private List titles;
+    private String titles;
 
-    public String getDesc(int i) {
-        return (String) desc.get(i);
+    public String getDesc() {
+        return desc;
     }
 
-    public void setDesc(String desc, int i) {
-        this.desc.set(i, desc);
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 
-//    public String getReleaseDate() {
-//        return releaseDate;
+    public String getTitles() {
+        return titles;
+    }
+
+    public void setTitles(String titles) {
+        this.titles = titles;
+    }
+
+//    public String getTitles(int i) {        // ignore
+//        return (String)titles.get(i);
 //    }
 //
-//    public void setReleaseDate(String releaseDate) {
-//        this.releaseDate = releaseDate;
+//    public void setTitles(String titles, int i) {
+//        this.titles.set(i, titles);
 //    }
-
-    public String getTitles(int i) {
-        return (String)titles.get(i);
-    }
-
-    public void setTitles(String titles, int i) {
-        this.titles.set(i, titles);
-    }
 
 }
